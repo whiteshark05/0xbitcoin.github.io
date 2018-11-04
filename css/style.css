@@ -46,7 +46,7 @@ body {
 
 body {
     font-weight: 400;
-    color: #203566;
+    color: #002059;
 }
 
 ul {
@@ -73,7 +73,7 @@ button {
 }
 
 a {
-    color: #2c3e50;
+    color: #ffffff;
 }
 
 h1,
@@ -113,7 +113,7 @@ p {
     font-size: 16px;
     line-height: 24px;
     font-weight: 400;
-    color: #203566;
+    color: #000000;
     margin-bottom: 0px;
 }
 
@@ -179,9 +179,7 @@ button {
 2. Site Preloader Css Start
 ===================================================*/
 .site-preloader {
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
+  background: #ff7f00;
     height: 100%;
     left: 0;
     position: fixed;
@@ -229,7 +227,7 @@ button {
 ===================================================*/
 
 .support-bar-area {
-    display: none;
+  display: none;
 }
 
 header.header {
@@ -239,7 +237,7 @@ header.header {
     z-index: 999;
     background: #ff7f00;
     width: 100%;
-    padding: 27px 0px 27px;
+    padding: 10px 0px 10px;
     border-bottom: 0px solid rgba(255, 255, 255, 0.25);
 
 }
@@ -265,7 +263,7 @@ header.header {
     left: 0;
     width: 100%;
     z-index: 9999;
-    background: #132639;
+    background: #002059;
     border-bottom: 0px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
@@ -285,7 +283,7 @@ header.header {
 }
 
 #mainHeader.header .nav-link:hover {
-    color: #ff7f00;
+    color: #000000;
     -webkit-transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -337,7 +335,7 @@ Main Menu Area Start
 }
 
 #welcomeArea .topcontent {
-    padding: 335px 0px 140px;
+    padding: 200px 0px 140px;
 }
 
 #welcomeArea .topcontent .sectionSeparator {
@@ -345,12 +343,12 @@ Main Menu Area Start
 }
 
 #welcomeArea .topcontent h1 {
-    color: #1f1f1f;
+    color: #002059;
 }
 
 #welcomeArea .topcontent p {
     display: block;
-    color: #1f1f1f;
+    color: #000000;
     padding: 0px 110px 0px 110px;
 
 }
@@ -361,9 +359,9 @@ Main Menu Area Start
     line-height: 60px;
     font-size: 14px;
     letter-spacing: 3px;
-    color: #ffffff;
-    background: #132639;
-    border: 2px solid #ffffff;
+
+
+
     text-align: center;
     display: inline-block;
     text-transform: uppercase;
@@ -372,9 +370,8 @@ Main Menu Area Start
 }
 
 #welcomeArea .topcontent a:hover {
-    color: #132639;
-    border-color: #132639;
-    background: #575f84;
+    color: #002059;
+
 }
 
  .aboutTop .box {
@@ -516,7 +513,7 @@ About Area End
 ================================================ */
 
 #transaction {
-    background: #ff7f00 url(../img/sectionbg.png) no-repeat top;
+    background: url(../img/sectionbg.png) repeat center;
     padding: 125px 0px 119px;
 }
 
@@ -666,6 +663,120 @@ tbody .tr:first-child td {
 Transaction Area End
 ================================================ */
 
+/*=================================================
+13. Investors Area Start
+=================================================*/
+#investors {
+background: url(../img/featurebg.png)no-repeat center;
+    padding: 100px 0px 130px;
+}
+
+#investors .heading-title h2 {
+
+    margin-bottom: 10px;
+}
+
+#investors .heading-title p {
+    margin-top: 3px;
+}
+
+#investors .heading-title {
+
+    margin-bottom: 70px;
+}
+
+
+#investors .box .social_icon ul li {
+    display: inline-block;
+}
+
+#investors .box .social_icon ul {
+    text-align: center;
+}
+
+#investors .box .image {
+    position: relative;
+    overflow: hidden;
+}
+
+#investors .box .image .social_icon {
+    position: absolute;
+    z-index: 9;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 0;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+
+}
+
+#investors .box:hover .image .social_icon {
+    bottom: 0px;
+    opacity: 1;
+}
+
+#investors .box .social_icon ul a {
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    line-height: 35px;
+    background: #fff;
+    display: inline-block;
+}
+
+#investors .box .social_icon i {
+    background: #002059;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+#investors .box .social_icon ul a:hover {
+    background: #ff7f00;
+}
+
+#investors .box .social_icon ul a:hover i {
+    background: #ffffff;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+
+#investors .box {
+    background: #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
+}
+
+#investors .box .info {
+    text-align: center;
+    padding: 13px 0px 11px;
+}
+
+#investors .box .info h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#investors .box .info h5 {
+    font-size: 16px;
+    color: #384371;
+    font-weight: 600;
+}
+
+#investors .box .info p {
+    font-size: 12px;
+    color: #575f84;
+}
+
+/*=================================================
+Investors Area End
+=================================================*/
 
 
 /* =============================================
@@ -732,7 +843,8 @@ Transaction Area End
 ================================================= */
 
 #feature {
-    background: url(../img/featurebg.png)no-repeat center;
+  display: none;
+    background: url(../img/featurebg.png) no-repeat center;
     background-size: cover;
     padding: 130px 0px 100px;
 }
@@ -1319,126 +1431,7 @@ Our Package Area End
 ===================================================== */
 
 
-/*=================================================
-13. Investors Area Start
-=================================================*/
-#investors {
-    display: none;
-    padding: 123px 0px 130px;
-}
 
-#investors .heading-title h2 {
-    display: none;
-    margin-bottom: 10px;
-}
-
-#investors .heading-title p {
-    margin-top: 3px;
-}
-
-#investors .heading-title {
-    display: none;
-    margin-bottom: 70px;
-}
-
-
-#investors .box .social_icon ul li {
-    display: inline-block;
-}
-
-#investors .box .social_icon ul {
-    text-align: center;
-}
-
-#investors .box .image {
-    position: relative;
-    overflow: hidden;
-}
-
-#investors .box .image .social_icon {
-    position: absolute;
-    z-index: 9;
-    bottom: 30px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    opacity: 0;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
-
-}
-
-#investors .box:hover .image .social_icon {
-    bottom: 0px;
-    opacity: 1;
-}
-
-#investors .box .social_icon ul a {
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    line-height: 35px;
-    background: #fff;
-    display: inline-block;
-}
-
-#investors .box .social_icon i {
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-#investors .box .social_icon ul a:hover {
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
-}
-
-#investors .box .social_icon ul a:hover i {
-    background: -webkit-linear-gradient(to right, #fff, #fff);
-    background: -moz-linear-gradient(to right, #fff, #fff);
-    background: linear-gradient(to right, #fff, #fff);
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-}
-
-
-#investors .box {
-    background: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.10);
-}
-
-#investors .box .info {
-    text-align: center;
-    padding: 13px 0px 11px;
-}
-
-#investors .box .info h5 {
-    font-size: 16px;
-    font-weight: 600;
-}
-
-#investors .box .info h5 {
-    font-size: 16px;
-    color: #384371;
-    font-weight: 600;
-}
-
-#investors .box .info p {
-    font-size: 12px;
-    color: #575f84;
-}
-
-/*=================================================
-Investors Area End
-=================================================*/
 
 
 
@@ -1563,67 +1556,8 @@ FAQ Area End
 15. Footer Area Start
 ====================================================*/
 #footer {
-    background: #1e3056;
+    background: #002059;
     padding: 195px 0px 26px;
-}
-
-#footer .newslatterBox .box {
-    background: #8929e2;
-    padding: 47px 120px 42px;
-    margin-top: -276px;
-}
-
-#footer .newslatterBox .left {
-    margin-right: 120px;
-}
-
-#footer .newslatterBox h2 {
-    font-size: 30px;
-    color: #fff;
-
-}
-
-#footer .newslatterBox .sectionSeparator {
-    background: #fff;
-}
-
-#footer .newslatterBox input {
-    width: 270px;
-    height: 50px;
-    background: none;
-    border: 1px solid rgba(255, 255, 255, 0.30);
-    padding: 0px 20px;
-    color: #fff;
-    box-shadow: 0px 3px 10px #0000001a;
-}
-
-#footer .newslatterBox button {
-    width: 170px;
-    height: 50px;
-    background: none;
-    border: 2px solid rgb(255, 255, 255);
-    text-align: center;
-    line-height: 50px;
-    color: #fff;
-    margin: 0px 0px 0px -4px;
-    position: relative;
-    top: 2px;
-    cursor: pointer;
-    transition: .3s ease-in;
-    box-shadow: 0px 3px 10px #0000001a;
-}
-
-#footer .newslatterBox button:hover {
-    background: #fff;
-    color: #8a2ae2;
-}
-
-#footer .newslatterBox input::placeholder {
-    color: rgba(255, 255, 255, 0.30);
-}
-
-#footer .newslatterBox input:focus {
-    border-color: #fff;
 }
 
 #footer .logo a {
@@ -1753,9 +1687,7 @@ Footer Area End
 }
 
 .totop>a {
-    background: -webkit-linear-gradient(to right, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to right, #efb1fd, #5271c4);
-    background: linear-gradient(to right, #efb1fd, #5271c4);
+    background: #ff7f00;
     color: #fff;
     display: block;
     font-size: 16px;
@@ -1773,7 +1705,6 @@ Footer Area End
 }
 
 .totop>a:hover {
-    background: -webkit-linear-gradient(to left, #efb1fd, #5271c4);
-    background: -moz-linear-gradient(to left, #efb1fd, #5271c4);
-    background: linear-gradient(to left, #efb1fd, #5271c4);
+    background: #ffffff;
+    color: #ff7f00;
 }
