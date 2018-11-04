@@ -30,7 +30,7 @@
 	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
 	<meta name="keywords" content="">
 	<meta name="description" content="">
-	<title> 0xBitcoin </title>
+	<title>Foundation </title>
 	<!--Favicon-->
 	<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
 	<!--Bootstrap Stylesheet-->
@@ -137,14 +137,14 @@
 
 				</div>
 			</div>
-<!-- About Area Start -->
+
 			<div class="container">
 				<div class="row">
 					<div class="col-md-6 d-flex align-self-center">
 						<div class="left">
 							<div class="heading-title">
 								<h2>
-									What is 0xBitcoin?
+									About Finan
 								</h2>
 								<div class="sectionSeparator"></div>
 								<p>
@@ -169,12 +169,12 @@
 					</div>
 					<div class="col-md-6">
 						<div class="right">
-							<img class="img-fluid" src="img/blueball3.gif" alt="">this is a sample gfx
+							<img class="img-fluid" src="img/about.png" alt="">
 						</div>
 					</div>
 				</div>
 			</div>
-	<!-- About Area End -->
+
 			</div>
 		</div>
 	</section>
@@ -186,27 +186,66 @@
 			<div class="row justify-content-center">
 				<div class="col-md-10 col-lg-8 text-center">
 					<div class="heading-title">
-						<h3>
-							Stats
-						</h3>
+						<h2>
+							Fundraising Goal
+						</h2>
+						<div class="sectionSeparator"></div>
+						<p>
+							We are currently raising 9 ETH for a CCN paid article.
+							<br>
 
+						</p>
+						<bold>% out of 9 ETH raised</bold>
 					</div>
 				</div>
 			</div>
-			<div class="row justify-content-center">
-				<div class="col-md-12">
-					<div class="tab1">
-
+<b><br>
 						<div class="tab-content" id="pills-tabContent">
 							<div class="tab-pane fade show active" id="pills-deposit" role="tabpanel" aria-labelledby="pills-deposit-tab">
 								<div class="table-responsive">
-									<table class="table">
-										<tbody>
-											<tr align=center>
-												<h2>TEST</h2>
-											</tr>
-										</tbody>
-									</table>
+											<div id="container">
+												<div id="myProgress">
+													<div id="myBar">0%</div>
+												</div>
+											</div>
+											<script type="text/javascript" src="js/ethjs.js"></script>
+											<script type="text/javascript">
+
+													function getEthBalance(address){
+															return new Eth(new Eth.HttpProvider("https://mainnet.infura.io/MnFOXCPE2oOhWpOCyEBT")).getBalance(address, "latest");
+													}
+
+													function moveProgressBar(percent, element_id) {
+															let elem = document.getElementById(element_id);
+															let width = 0;
+															let interval_id = setInterval(function(){
+																	if (width >= percent) {
+																			clearInterval(interval_id);
+																	} else {
+																			width += Math.max(0.001, (percent-width)/5)
+																			elem.style.width = width + '%';
+																			elem.innerHTML = Math.round(width) * 1 + '%';
+																	}
+															}, 33.333);
+
+													}
+
+													function loadData() {
+															let element_id = "myBar";
+															let address = "0xc22E34923F14f1663DdAB4956F92784DD4FE360a";
+															let name = "CCN Donation Fund";
+															let goal_balance_eth = 9;
+															getEthBalance(address).then((result) => {
+																	return 100 * Number(Eth.fromWei(result, "ether")) / goal_balance_eth
+															}).then((result) => {
+																	moveProgressBar(result, element_id)
+															}).catch((error) => {
+																	console.log("err", error)
+															});
+													}
+
+													loadData();
+											</script>
 								</div>
 							</div>
 						</div>
@@ -218,11 +257,352 @@
 	<!-- Transaction Area End -->
 
 
+	<!-- Investors Area Start -->>
+	<section id="investors">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 text-center">
+					<div class="heading-title">
+						<h2>
+							0xBitcoin Foundation Board
+						</h2>
+						<div class="sectionSeparator"></div>
+						<p>
+							listed below are 0xBTC Foundation Board Members who hold a titled position
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/1.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Brandon Grill
+							</h5>
+							<p>First Vice President</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/2.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Michael Seiler</h5>
+							<p>Second Vice President</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/3.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Dennis Dee</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/4.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Geoff Marshall</h5>
+							<p>Secretary</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/5.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Jeffrey Littman</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/6.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Jaret Turkell</h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/7.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5>Infernal_Toast</h5>
+							<p>Humble Developer</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-4 col-lg-3">
+					<div class="box">
+						<div class="image">
+							<img class="img-fluid" src="img/team/8.png" alt="">
+							<div class="social_icon">
+								<ul>
+									<li>
+										<a href="#">
+											<i class="fab fa-twitter"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-google-plus-g"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<i class="fas fa-envelope"></i>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="info">
+							<h5></h5>
+							<p></p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Investors Area End -->
 
+	<!-- About Area Start -->
 
-
-
-
+	<!-- About Area End -->
 
 
 

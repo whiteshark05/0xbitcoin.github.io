@@ -91,18 +91,21 @@ h1,
 
 h1 {
     font-size: 60px;
+    color: #1a243e;
     font-weight: 600;
     font-family: 'Exo', sans-serif;
 }
 
 h2 {
     font-size: 40px;
+    color: #1a243e;
     font-weight: 600;
     font-family: 'Exo', sans-serif;
 }
 
 h3 {
     font-size: 22px;
+    color: #ff7f00;
 }
 
 h4 {
@@ -263,7 +266,7 @@ header.header {
     left: 0;
     width: 100%;
     z-index: 9999;
-    background: #002059;
+    background: #1a243e;
     border-bottom: 0px;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
 }
@@ -335,7 +338,7 @@ Main Menu Area Start
 }
 
 #welcomeArea .topcontent {
-    padding: 200px 0px 140px;
+    padding: 200px 0px 75px;
 }
 
 #welcomeArea .topcontent .sectionSeparator {
@@ -343,12 +346,12 @@ Main Menu Area Start
 }
 
 #welcomeArea .topcontent h1 {
-    color: #002059;
+    color: #1a243e;
 }
 
 #welcomeArea .topcontent p {
     display: block;
-    color: #000000;
+    color: #1a243e;
     padding: 0px 110px 0px 110px;
 
 }
@@ -370,12 +373,12 @@ Main Menu Area Start
 }
 
 #welcomeArea .topcontent a:hover {
-    color: #002059;
+    color: #1a243e;
 
 }
 
  .aboutTop .box {
-    padding: 50px 30px;
+    padding: 10px 10px;
     background: rgba(255, 255, 255, 0.90);
     margin: 100px 0px 100px;
     border-radius: 8px;
@@ -467,14 +470,14 @@ Welcome Area End
 6. About Area Start
 =============================================== */
 #aboutUs {
-    display: none;
+
 }
 
 #aboutUs .heading-title p {
-    margin-top: 3px;
+    margin-top: 0px;
     font-size: 16px;
     color: #575f84;
-    margin-bottom: 24px;
+    margin-bottom: 42px;
 }
 
 #aboutUs .content p {
@@ -493,7 +496,7 @@ Welcome Area End
     text-transform: uppercase;
     border-radius: 5px;
     letter-spacing: 3px;
-    margin-top: 44px;
+    margin-top: 5px;
 }
 
 .aboutUs .abtn:hover {
@@ -513,8 +516,9 @@ About Area End
 ================================================ */
 
 #transaction {
-    background: #ff7f00;
-    padding: 125px 0px 119px;
+
+    background: #ffffff url(../img/sectionbg.png) no-repeat center;
+    padding: 25px 0px 50px;
 }
 
 #transaction .heading-title p {
@@ -537,7 +541,7 @@ About Area End
 }
 
 .table tr th:first-child {
-    padding-left: 50px;
+    padding-left: 10px;
 }
 
 .table tr td {
@@ -549,15 +553,13 @@ About Area End
 }
 
 thead {
-    background: rgba(255, 255, 255, 0.10);
+    background: #ff7f00;
     padding: 0px 10px;
 }
 
 .tab-content {
     border-radius: 10px;
-    background: -webkit-linear-gradient(to right, #f0b5fd, #5271c4);
-    background: -moz-linear-gradient(to right, #f0b5fd, #5271c4);
-    background: linear-gradient(to right, #f0b5fd, #5271c4);
+    background: #ff7f00;
     position: relative;
 }
 
@@ -569,15 +571,13 @@ thead {
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
-    background: -webkit-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
-    background: -moz-linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
-    background: linear-gradient(to right, rgba(240, 181, 253, 0.30), rgba(82, 113, 196, 0.30));
+    background: #ff7f00;
     z-index: -1;
     border-radius: 10px;
 }
 
 .table .media {
-    padding-left: 40px;
+    padding-left: 10px;
 }
 .table .media img {
     margin-right: 20px;
@@ -667,7 +667,7 @@ Transaction Area End
 13. Investors Area Start
 =================================================*/
 #investors {
-background: url(../img/featurebg.png)no-repeat center;
+background:  url(../img/featurebg.png)no-repeat center;
     padding: 100px 0px 130px;
 }
 
@@ -783,7 +783,7 @@ Investors Area End
 8. Invest Area Start
 ================================================= */
 #investor {
-    display: none;
+
     padding: 123px 0px 130px;
 }
 
@@ -1556,7 +1556,7 @@ FAQ Area End
 15. Footer Area Start
 ====================================================*/
 #footer {
-    background: #002059;
+    background: #1a243e;
     padding: 195px 0px 26px;
 }
 
